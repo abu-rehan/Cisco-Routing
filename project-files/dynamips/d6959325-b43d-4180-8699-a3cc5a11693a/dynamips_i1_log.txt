@@ -1,0 +1,55 @@
+Nov 18 13:37:16.806 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Nov 18 13:37:16.806 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 50489.
+Nov 18 13:37:17.230 HYPERVISOR: exec_cmd: hypervisor version 
+Nov 18 13:37:17.230 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Abu\GNS3\projects\IPV4 Routing\project-files\dynamips 
+Nov 18 13:37:17.230 GENERAL: working_dir=C:\Users\Abu\GNS3\projects\IPV4 Routing\project-files\dynamips
+Nov 18 13:37:17.246 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Abu\GNS3\projects\IPV4 Routing\project-files\dynamips\608d7f2b-9b74-4038-a02e-5274a991f8e7 
+Nov 18 13:37:17.246 GENERAL: working_dir=C:\Users\Abu\GNS3\projects\IPV4 Routing\project-files\dynamips\608d7f2b-9b74-4038-a02e-5274a991f8e7
+Nov 18 13:37:17.246 HYPERVISOR: exec_cmd: vm create NT2 2 c7200 
+Nov 18 13:37:17.246 VM: VM NT2 created.
+Nov 18 13:37:17.246 HYPERVISOR: exec_cmd: vm set_con_tcp_port NT2 5005 
+Nov 18 13:37:17.246 HYPERVISOR: exec_cmd: c7200 get_mac_addr NT2 
+Nov 18 13:37:17.246 HYPERVISOR: exec_cmd: vm get_status NT2 
+Nov 18 13:37:17.246 HYPERVISOR: exec_cmd: vm slot_add_binding NT2 0 0 C7200-IO-FE 
+Nov 18 13:37:17.262 HYPERVISOR: exec_cmd: vm set_disk0 NT2 0 
+Nov 18 13:37:17.262 HYPERVISOR: exec_cmd: vm set_exec_area NT2 64 
+Nov 18 13:37:17.262 HYPERVISOR: exec_cmd: vm set_ios NT2 C:/Users/Abu/GNS3/images/IOS/c7200-adventerprisek9-mz.151-4.M2.image 
+Nov 18 13:37:17.262 HYPERVISOR: exec_cmd: c7200 set_mac_addr NT2 ca02.2258.0000 
+Nov 18 13:37:17.262 HYPERVISOR: exec_cmd: vm set_nvram NT2 512 
+Nov 18 13:37:17.262 HYPERVISOR: exec_cmd: vm set_ram NT2 512 
+Nov 18 13:37:17.262 HYPERVISOR: exec_cmd: vm get_status NT2 
+Nov 18 13:37:17.262 HYPERVISOR: exec_cmd: vm slot_add_binding NT2 1 0 PA-FE-TX 
+Nov 18 13:37:17.262 HYPERVISOR: exec_cmd: vm get_status NT2 
+Nov 18 13:37:17.262 HYPERVISOR: exec_cmd: vm slot_add_binding NT2 2 0 PA-4E 
+Nov 18 13:37:17.262 HYPERVISOR: exec_cmd: vm get_status NT2 
+Nov 18 13:37:17.262 HYPERVISOR: exec_cmd: vm slot_add_binding NT2 3 0 PA-GE 
+Nov 18 13:37:23.947 HYPERVISOR: exec_cmd: nio create_udp udp-943ee7aa-7cbe-4787-8970-005d1dc745b9 10004 127.0.0.1 10005 
+Nov 18 13:37:24.183 HYPERVISOR: exec_cmd: vm slot_add_nio_binding NT2 0 0 udp-943ee7aa-7cbe-4787-8970-005d1dc745b9 
+Nov 18 13:37:24.183 HYPERVISOR: exec_cmd: vm get_status NT2 
+Nov 18 13:37:24.293 HYPERVISOR: exec_cmd: nio create_udp udp-1f280ef5-8524-4b9e-8c45-7a19dc24063f 10008 127.0.0.1 10009 
+Nov 18 13:37:24.293 HYPERVISOR: exec_cmd: vm slot_add_nio_binding NT2 1 0 udp-1f280ef5-8524-4b9e-8c45-7a19dc24063f 
+Nov 18 13:37:24.293 HYPERVISOR: exec_cmd: vm get_status NT2 
+Nov 18 13:37:26.455 HYPERVISOR: exec_cmd: nio create_udp udp-4e3f4df9-33c2-4e4c-8042-b8d8a1dd1356 10040 127.0.0.1 10041 
+Nov 18 13:37:26.455 HYPERVISOR: exec_cmd: vm slot_add_nio_binding NT2 2 0 udp-4e3f4df9-33c2-4e4c-8042-b8d8a1dd1356 
+Nov 18 13:37:26.455 HYPERVISOR: exec_cmd: vm get_status NT2 
+Nov 18 13:37:27.095 HYPERVISOR: exec_cmd: nio create_udp udp-a76cedfe-d98d-4b40-b0dd-f64e9e569116 10064 127.0.0.1 10065 
+Nov 18 13:37:27.097 HYPERVISOR: exec_cmd: vm slot_add_nio_binding NT2 3 0 udp-a76cedfe-d98d-4b40-b0dd-f64e9e569116 
+Nov 18 13:37:27.098 HYPERVISOR: exec_cmd: vm get_status NT2 
+Nov 18 13:37:38.462 HYPERVISOR: exec_cmd: vm create Ghost 0 c7200 
+Nov 18 13:37:38.462 VM: VM Ghost created.
+Nov 18 13:37:38.462 HYPERVISOR: exec_cmd: vm set_ios Ghost C:/Users/Abu/GNS3/images/IOS/c7200-adventerprisek9-mz.151-4.M2.image 
+Nov 18 13:37:38.462 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Nov 18 13:37:38.462 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost 'C:\Users\Abu\GNS3\projects\IPV4 Routing\project-files\dynamips\c7200-adventerprisek9-mz.151-4.M2.image-512.ghost' 
+Nov 18 13:37:38.462 HYPERVISOR: exec_cmd: vm get_status NT2 
+Nov 18 13:37:38.478 HYPERVISOR: exec_cmd: vm set_config NT2 configs\i2_startup-config.cfg configs\i2_private-config.cfg 
+Nov 18 13:37:38.478 HYPERVISOR: exec_cmd: vm start NT2 
+Nov 18 13:39:00.680 HYPERVISOR: exec_cmd: vm get_status NT2 
+Nov 18 13:39:00.680 HYPERVISOR: exec_cmd: vm stop NT2 
+Nov 18 13:39:00.845 VM: VM NT2 shutdown.
+Nov 18 13:39:00.846 HYPERVISOR: exec_cmd: vm extract_config NT2 
+Nov 18 13:39:40.816 HYPERVISOR: exec_cmd: vm get_status NT2 
+Nov 18 13:39:40.816 HYPERVISOR: exec_cmd: vm extract_config NT2 
+Nov 18 13:43:01.028 HYPERVISOR: Stopped.
+Nov 18 13:43:01.029 VM: VM Ghost destroyed.
+Nov 18 13:43:01.055 VM: VM NT2 destroyed.
+Nov 18 13:43:01.068 GENERAL: reset done.
